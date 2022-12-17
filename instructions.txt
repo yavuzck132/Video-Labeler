@@ -1,0 +1,17 @@
+Step 1: Download Anaconda
+    You can follow this video https://www.youtube.com/watch?v=YU7ZGgPKSsA
+    While installing Anaconda, at Advanced options uncheck "Add Anaconda3 to my PATH environment variable".
+	This step is at (4.09) on the youtube video	
+Step 2: You can use Jupiter Notebook from Anaconda if you want. Or you can download an IDE.
+    Pycharm is recomended.
+Step 3: Copy the "detectron_env_lib_config.txt" to your C://Users/[Username] folder
+    This file has all the paths for the libraries that was used in the code.
+Step 4: Open Command Prompt(cmd) and type "conda create --name myenv --file detectron_env_lib_config.txt"
+    It will create identical environment called myenv for you
+Step 5: Go to this page. https://haroonshakeel.medium.com/detectron2-setup-on-windows-10-and-linux-407e5382df1
+    Here skip to 3rd step, and instead of "conda activate detectron_env", type "conda activate myenv"
+    Continue the next steps on the webpage
+Step 6: If you are using the Pycharm, open pycharm. https://www.youtube.com/watch?v=Cabk72CQHBc&t=490s
+    Go to time (5:55) and follow steps until (7:22)
+Step 7: Copy main.py, videos folder and class.txt to created project folder.
+Step 8: You can run the code now by clicking play button at top right of the Pycharm IDE.
