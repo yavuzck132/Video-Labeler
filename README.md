@@ -33,7 +33,6 @@ Predictions save:[videos or images]/predictions/[name of the video or image]. Fo
 
 ![image](https://user-images.githubusercontent.com/33734353/229110744-3c81ad43-5030-4547-8103-004001259b60.png)
 
-Example of bounding boxes detected using the Faste R-CNN model. In the case below all the boxes were True positives (TP). 
-The confidence score is given on the top left side of the box. 
+Example of bounding boxes detected (green boxes) using the Faste R-CNN model. The blue boxes are the labeled boxes. The decision for true positive (TP) or false positive (FP) depends on the selected COCO mAP score (can be changed within the code). In the case below all of the boxes were True positives (TP). The confidence score (in the detection) is given on the top left side of the box. 
 
 ![image](https://github.com/yavuzck132/Video-Labeler/blob/master/1691392097452.jpg)
