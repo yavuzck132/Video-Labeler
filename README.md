@@ -33,6 +33,9 @@ Predictions save:[videos or images]/predictions/[name of the video or image]. Fo
 
 ![image](https://user-images.githubusercontent.com/33734353/229110744-3c81ad43-5030-4547-8103-004001259b60.png)
 
+
+- BELOW ARE EXAMPLES OF COMPUTER VISION MODELS DEVELOPED USING THIS VIDEO LABELER:
+
 Example of bounding boxes detected (green boxes) using the Faste R-CNN model. The blue boxes are the labeled boxes. The decision for true positive (TP) or false positive (FP) depends on the selected COCO mAP score (can be changed within the code). In the case below all of the boxes were True positives (TP). The confidence score (in the detection) is given on the top left side of the box. 
 
 ![image](https://github.com/yavuzck132/Video-Labeler/blob/master/1691392097452.jpg)
@@ -40,3 +43,7 @@ Example of bounding boxes detected (green boxes) using the Faste R-CNN model. Th
 Example of instance segmentation using the Mask R-CNN model. This is a custom designed rotated bounding boxes and in normal applications, the boxes would not be rotated. This is similar to Faster R-CNN for object detection but, also includes the segmentations in additon to the boxes. Additionally, it segments each object separately. Similarly, the classes and the confidence scores will be displayed on the boxes.
 
 ![image](https://github.com/yavuzck132/Video-Labeler/blob/master/1691390806339.jpg)
+
+This is an example of semantic segmentation model developed using PointRend. Unlike Faster R-CNN and Mask R-CNN, this model does not differentatiate between multiple objects (especially if they are entangled or intersecting with each other). Rather, it localizes these objects based on the pixels within the images. For instance, in this case below, it segmented the cotton fibers (holographic images) out of the background but, did not differentiate between the background and the fibers. There are two classes in this case (the background and the fibers).
+
+![image](https://github.com/yavuzck132/Video-Labeler/blob/master/1691392047415.jpg)
